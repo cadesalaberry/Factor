@@ -17,7 +17,7 @@ Time the useful part of your code, ignoring I/O costs as much as possible. On a 
 
 # How it works
 
-The number space is split latterally. Basically it will test every multiple of its `(id + 2)` (so we avoid zero and 1). Here is an example of number attribution per thread for `p=4` and `n=64`. Notice it only goes up to 8 because 8 = 2^(bitlenght(n)/2).
+The number space is split latterally. Basically it will test every multiple of its `(id + 2)` (so we avoid zero and 1). Here is an example of number attribution per thread for `p=4` and `n=64`. Notice it only goes up to 8 because `2^(bitlenght(64)/2) = 8`.
 
 | #0| #1| #2| #3|
 |---|---|---|---|
